@@ -6,8 +6,8 @@ func Duration(d *time.Duration) time.Duration {
 	return *d
 }
 
-func DurationP(i time.Duration) *time.Duration {
-	return &i
+func DurationP(d time.Duration) *time.Duration {
+	return &d
 }
 
 func Int64(i *int64) int64 {
