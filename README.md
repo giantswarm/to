@@ -1,1 +1,1 @@
-This library is deprecated. Please use idiomatic Go instead.
+Library for convenient type dereferencing in Go
