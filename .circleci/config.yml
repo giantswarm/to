@@ -1,7 +1,8 @@
-version: 2
+version: 2.1
 jobs:
   build:
-    machine: true
+    machine:
+      image: ubuntu-2404:current
     steps:
     - checkout
 
@@ -10,7 +11,7 @@ jobs:
         chmod +x ./architect
         ./architect version
     - run: ./architect build
-    - deploy:
+    - run:
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
             ./architect deploy
