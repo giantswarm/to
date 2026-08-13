@@ -1,0 +1,2 @@
+# Repository specific vulnerability ignores.
+# Format: CVE-YYYY-NNNNN until=YYYY-MM-DD # reason
